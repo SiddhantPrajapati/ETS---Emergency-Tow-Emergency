@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>
+            ETS - Emergency Tow System
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width , initial-scale = 1.0" >
+    </head>
+    <body>
+        <style>
+            body {
+                text-align: center;
+            }
+            h2 {
+                color: rgb(255, 245, 103);
+                font-size: 70px;
+                margin: 10;
+            }
+            h1 {
+                color: rgb(55, 55, 158);
+                font-size: 70px;
+            }
+            
+            h3 {
+                font-size: 50px;
+            }
+
+            #img-border {
+                border: solid;
+            }
+            pre {
+                border: solid;
+            }
+        </style>
+        <table>
+            <tr>
+                <th>
+                    <a href="file:///C:/Users/dell/Documents/Projects/Web%20development%20Projects/ETS/ETS%20-%20Home%20Page.html">
+                        <img src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png" alt="Menu_icon" id="menu" height="120" width="120">
+                    </a>
+                </th>
+                <th><h2>  Emergency Tow System  </h2></th>
+                <th>
+                    <a href="file:///C:/Users/dell/Documents/Projects/Web%20development%20Projects/ETS/ETS%20-%20Login.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/47/47774.png" alt="User_Symbol" height="80" width="80">
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <th><br></th>
+                <th><br></th>
+                <th><br></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <pre>
+                        Our website use google to show service center and tow truck center
+                        near your area. Login with ETS to show your service center on the 
+                        top of searches in your area. 
+
+                        <img src="C:\Users\dell\Documents\Projects\Web development Projects\Menu_icon.jpg.png" alt="Menu icon" height="30" width="30">:
+                        This icon is useful for open menu, click one time to open menu .
+
+                        If menu is open and you click this button then menu close and you 
+                        are directed to Home page.
+
+
+                        <img src="C:\Users\dell\Documents\Projects\Web development Projects\User -Symbol.png" alt="User symbol" height="30" width="30">
+                        This icon is useful to create account and user login.
+
+                        If login menu is open and you click it then login page close and 
+                        you are directed to homepage. 
+
+                        Login with ETS to show your service center and tow truck center 
+                        on the top of search in your area.
+
+                        <img src="C:\Users\dell\Downloads\tow_truck.jpg" alt=tow_truck"" height="30" width="240">
+                        This icon is useful for open form to search nearby tow truck center. 
+                        In that you can fill details of vehicle like vehicle type, your city
+                        name , vehicle size with share our location. 
+                        
+                        <img src="C:\Users\dell\Downloads\service center.jpg" alt="service center" height="30" width="240">
+                        This icon is useful for open form to search nearby service center. 
+                        In that you can fill details of vehicle like service center name,
+                        vehicle type, vehicle model, number of service center you want to
+                        show at a time.
+
+                        <img src="C:\Users\dell\Downloads\other servises.jpg" alt="other services" height="30" width="240">
+                        This icon is useful for open other services, that contain list of
+                        other services like emergency in that you call nearby police station
+                        fire station, hospital with only one click.
+
+                        In that other service is add service center, and tow truck center. 
+
+                        <img src="C:\Users\dell\Downloads\Feedback and ratings.jpg" alt="feedback and ratings" height="30" width="240">
+                        This icon is useful for open feedback page in you can see othe user's 
+                        review and also provide your review.
+
+                        We are read your valuable review and feedback and do required changes 
+                        accoding your feedback.
+
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <th><p id="qouets">Our Software call near hospital, police station, and fire brigade in emergency</p></th>
+                <th></th>
+            </tr>
+            <tr style="background-color: rgb(40, 0, 85); text-align: left; color: aliceblue;">
+                <th></th>
+                <th><h6 style="font-size: 10px;"><br><br>Creted by : (Team ID) = 397072<br>
+                    Enrollment No :  200470107068 <br>
+                    Enrollment No :  200470107074 <br>
+                    Enrollment No :  200470107073 <br>
+                    Enrollment No :  210470107506 <br>
+                    Contact Info (Email) :<br> <a href="mailto:devanshubhatti25@gmail.com">Devanshu Bhatti</a><br>
+                                          <a href="mailto:bharatvala195@gmail.com ">Bharat Vala</a><br>
+                                          <a href="mailto:siddhantprajapati6377@gmail.com">Siddhant Prajapati</a><br>
+                </h6>
+                </th>
+                <th></th>
+            </tr> 
+        </table>
+        <script>
+            setInterval(changeQouets,3000);
+            let i = 0;
+            function changeQouets(){
+                do{
+                    switch(i%5){
+                        case 0: document.getElementById("qouets").innerHTML = "ETS help you to tow your vehicle in Emergency";
+                        break;
+                        case 1: document.getElementById("qouets").innerHTML = "ETS shows near service center of vehicle";
+                        break;
+                        case 2: document.getElementById("qouets").innerHTML = "Click Option button to get menu or Features.";
+                        break;
+                        case 3: document.getElementById("qouets").innerHTML = "Click user button to login or create new account";
+                        break;
+                        case 4: document.getElementById("qouets").innerHTML = "Our Software call near hospital, police station, and fire brigade in emergency";
+                        break;
+                    }
+                    i++;
+                }while(i < -1);
+            }
+        </script>    
+    </body>
+
+</html>

@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>
+            ETS - Emergency Tow System
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width , initial-scale = 1.0" >
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+        }
+        h2 {
+            color: rgb(255, 245, 103);
+            font-size: 70px;
+            margin: 10;
+        }
+        h1 {
+            color: rgb(55, 55, 158);
+            font-size: 70px;
+        }
+        td {
+            text-align: center;
+    }
+        </style>
+            <table>
+                <tr>
+                    <td>
+                        <a href="file:///C:/Users/dell/Documents/Projects/Web%20development%20Projects/ETS/ETS%20-%20Menu.html">
+                            <img src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png" alt="Menu_icon" id="menu" height="120" width="120">
+                        </a>
+                    </td>
+                    <td><h2>  Emergency Tow System  </h2></td>
+                    <td>
+                        <a href="file:///C:/Users/dell/Documents/Projects/Web%20development%20Projects/ETS/ETS%20-%20Login.html">
+                            <img src="https://cdn-icons-png.flaticon.com/512/47/47774.png" alt="User_Symbol" height="80" width="80">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><h1>Welcome To ETS</h1></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img id="car1" src="https://img.freepik.com/free-vector/towing-cars-set_1150-43093.jpg?w=2000" alt="Tow_Car_image1" height="120" width="120"></td>
+                    <td><img id="car2" src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-126590,resizemode-1,msid-90010450/news/india/mumbai-police-chief-initiates-discussion-on-stopping-towing-of-vehicles.jpg" alt="Tow_Car_image2" height="300" width="300"></td>
+                    <td><img id="car3" src="https://content.jdmagicbox.com/comp/hyderabad/m1/040pxx40.xx40.150728170014.p4m1/catalogue/s-s-towing-services-new-bowenpally-hyderabad-heavy-vehicle-towing-services-0r8sjhuq2h.jpg?clr=" alt="Tow_Car_image3" height="120" width="120">
+                    </td>
+                </tr>
+                <tr>
+                    <th><br></th>
+                    <th><br></th>
+                    <th><br></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="qouets">Our Software call near hospital, police station, and fire brigade in emergency</p></td>
+                    <td></td>
+                </tr> 
+                <tr style="background-color: rgb(40, 0, 85); text-align: left; color: aliceblue;">
+                    <th></th>
+                    <th><h6 style="font-size: 10px;"><br><br>Creted by : (Team ID) = 397072<br>
+                        Enrollment No :  200470107068 <br>
+                        Enrollment No :  200470107074 <br>
+                        Enrollment No :  200470107073 <br>
+                        Enrollment No :  210470107506 <br>
+                        Contact Info (Email) :<br> <a href="mailto:devanshubhatti25@gmail.com">Devanshu Bhatti</a><br>
+                                              <a href="mailto:bharatvala195@gmail.com ">Bharat Vala</a><br>
+                                              <a href="mailto:siddhantprajapati6377@gmail.com">Siddhant Prajapati</a><br>
+                    </h6>
+                    </th>
+                    <th></th>
+                </tr>
+            </table>
+            <script>
+                setInterval(changeQouets,3000);
+                setInterval(changeImage,1000);
+                let i = 0;
+                function changeQouets(){
+                    do{
+                        switch(i%5){
+                            case 0: document.getElementById("qouets").innerHTML = "ETS help you to tow your vehicle in Emergency";
+                            break;
+                            case 1: document.getElementById("qouets").innerHTML = "ETS shows near service center of vehicle";
+                            break;
+                            case 2: document.getElementById("qouets").innerHTML = "Click Option button to get menu or Features.";
+                            break;
+                            case 3: document.getElementById("qouets").innerHTML = "Click user button to login or create new account";
+                            break;
+                            case 4: document.getElementById("qouets").innerHTML = "Our Software call near hospital, police station, and fire brigade in emergency";
+                            break;
+                        }
+                        i++;
+                    }while(i < -1);
+                }
+                function changeImage(){
+                    do{
+                        switch(i%3){
+                            case 0: document.getElementById("car1").src = "https://img.etimg.com/thumb/width-1200,height-900,imgsize-126590,resizemode-1,msid-90010450/news/india/mumbai-police-chief-initiates-discussion-on-stopping-towing-of-vehicles.jpg";
+                                document.getElementById("car2").src = "https://content.jdmagicbox.com/comp/hyderabad/m1/040pxx40.xx40.150728170014.p4m1/catalogue/s-s-towing-services-new-bowenpally-hyderabad-heavy-vehicle-towing-services-0r8sjhuq2h.jpg?clr=";
+                                document.getElementById("car3").src = "https://img.freepik.com/free-vector/towing-cars-set_1150-43093.jpg?w=2000";
+                            break;
+                            
+                            case 1: document.getElementById("car2").src = "https://img.etimg.com/thumb/width-1200,height-900,imgsize-126590,resizemode-1,msid-90010450/news/india/mumbai-police-chief-initiates-discussion-on-stopping-towing-of-vehicles.jpg";
+                                document.getElementById("car3").src = "https://content.jdmagicbox.com/comp/hyderabad/m1/040pxx40.xx40.150728170014.p4m1/catalogue/s-s-towing-services-new-bowenpally-hyderabad-heavy-vehicle-towing-services-0r8sjhuq2h.jpg?clr=";
+                                document.getElementById("car1").src = "https://img.freepik.com/free-vector/towing-cars-set_1150-43093.jpg?w=2000";
+                            break;
+
+                            case 2: document.getElementById("car3").src = "https://img.etimg.com/thumb/width-1200,height-900,imgsize-126590,resizemode-1,msid-90010450/news/india/mumbai-police-chief-initiates-discussion-on-stopping-towing-of-vehicles.jpg";
+                                document.getElementById("car1").src = "https://content.jdmagicbox.com/comp/hyderabad/m1/040pxx40.xx40.150728170014.p4m1/catalogue/s-s-towing-services-new-bowenpally-hyderabad-heavy-vehicle-towing-services-0r8sjhuq2h.jpg?clr=";
+                                document.getElementById("car2").src = "https://img.freepik.com/free-vector/towing-cars-set_1150-43093.jpg?w=2000";
+                            break;
+                        }
+                    }while(i < -1);
+                }
+            </script>
+    </body>
+</html>

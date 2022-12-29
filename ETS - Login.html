@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <title>
+            ETS - Emergengy Tow System
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width , initial-scale = 1.0" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity=
+        "sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+		crossorigin="anonymous">
+    </head>
+
+    <body onload="generate()">
+        <style>
+            body {
+                text-align: center;
+            }
+            h2 {
+                color: rgb(255, 245, 103);
+                font-size: 70px;
+                margin: 10;
+            }
+            h3 {
+                color: rgb(55, 55, 158);
+                font-size: 50px;
+            }
+            td {
+                text-align: center;
+                margin: 10;
+            }
+            #image{
+                margin-top: 10px;
+                box-shadow: 5px 5px 5px 5px gray;
+                width: 60px;;
+                padding: 20px;
+                font-weight: 400;
+                padding-bottom: 0px;
+                height: 40px;
+                user-select: none;
+                text-decoration:line-through;
+                font-style: italic;
+                font-size: x-large;
+                border: red 2px solid;
+                margin-left: 10px;
+	
+            }
+            #user-input{
+            	box-shadow: 5px 5px 5px 5px gray;
+            	width:auto;
+            	margin-right: 10px;
+            	padding: 10px;
+            	padding-bottom: 0px;
+            	height: 40px;
+            	border: red 0px solid;
+            }
+            input{
+            	border:1px black solid;
+            }
+            .inline{
+            	display:inline-block;
+            }
+            #btn{
+            	box-shadow: 5px 5px 5px grey;
+            	color: aqua;
+            	margin: 10px;
+            	background-color: brown;
+            }
+        </style>
+        <table style="text-align: center;">
+            <tr>
+                <td>
+                    <a href="file:///C:/Users/dell/Documents/Projects/Web%20development%20Projects/ETS/ETS%20-%20Menu.html">
+                        <img src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png" alt="Menu_icon" id="menu" height="120" width="120">
+                    </a> 
+                </td>
+                <td><h2>Emergency Tow System</h2></td>
+                <td>
+                    <a href="file:///C:/Users/dell/Documents/Projects/Web%20development%20Projects/ETS/ETS%20-%20Home%20Page.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/47/47774.png" alt="User_Symbol" height="80" width="80">
+                    </a>
+                    
+                </td>
+            </tr>
+            <td></td>
+            <td>
+                <table style="border: solid; , text-align: center;">
+                    <tr>
+                        <td></td>
+                        <td><h3>User Login</h3></td>
+                        <td><img src="" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <tr>
+                                <td>Username or Email:</td>
+                                <td><input type="email" id="user-input" value="email"></td>
+                                <td></td>
+                            </tr>    
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <tr>
+                                <td>Password :</td>
+                                <td><input type="password" id="user-input" value="password"></td>
+                                <td></td>
+                            </tr>    
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <tr>
+                                <td>Enter Captcha:</td>
+                                <td>
+                                    <div id="user-input" class="inline">
+                                        <input type="text" id="submit" placeholder="Captcha code" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="inline" onclick="generate()">
+                                        <i class="fas fa-sync"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="image" class="inline" selectable="False">
+                                    </div>
+                                </td>
+                                <td><input type="submit" id="btn" onclick="printmsg()" /></td>
+                                
+                            </tr>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><p id="key"></p><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p>Forget your password ?<a href="" style="color: yellow;">click here</a></p></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button id="login">Login</button></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Or Login with</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button id="google">Google</button>
+                            <button id="facebook">Facebook</button>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                </table>
+            </td>
+            <td></td>
+            <tr>
+                <th><br></th>
+                <th><br></th>
+                <th><br></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><p id="qouets">Our Software call near hospital, police station, and fire brigade in emergency</p></th>
+                <th></th>
+            </tr>
+            <tr style="background-color: rgb(40, 0, 85); text-align: left; color: aliceblue;">
+                <th></th>
+                <th><h6 style="font-size: 10px;"><br><br>Creted by : (Team ID) = 397072<br>
+                    Enrollment No :  200470107068 <br>
+                    Enrollment No :  200470107074 <br>
+                    Enrollment No :  200470107073 <br>
+                    Enrollment No :  210470107506 <br>
+                    Contact Info (Email) :<br> <a href="mailto:devanshubhatti25@gmail.com">Devanshu Bhatti</a><br>
+                                          <a href="mailto:bharatvala195@gmail.com ">Bharat Vala</a><br>
+                                          <a href="mailto:siddhantprajapati6377@gmail.com">Siddhant Prajapati</a><br>
+                </h6>
+                </th>
+                <th></th>
+            </tr>
+        </table>
+        <script>
+            setInterval(changeQouets,3000);
+            let i = 0;
+            function changeQouets(){
+                do{
+                    switch(i%5){
+                        case 0: document.getElementById("qouets").innerHTML = "ETS help you to tow your vehicle in Emergency";
+                        break;
+                        case 1: document.getElementById("qouets").innerHTML = "ETS shows near service center of vehicle";
+                        break;
+                        case 2: document.getElementById("qouets").innerHTML = "Click Option button to get menu or Features.";
+                        break;
+                        case 3: document.getElementById("qouets").innerHTML = "Click user button to login or create new account";
+                        break;
+                        case 4: document.getElementById("qouets").innerHTML = "Our Software call near hospital, police station, and fire brigade in emergency";
+                        break;
+                    }
+                    i++;
+                }while(i < -1);
+            }
+
+            var captcha;
+            function generate() {
+            	// Clear old input
+            	document.getElementById("submit").value = "";
+
+            	// Access the element to store
+            	// the generated captcha
+            	captcha = document.getElementById("image");
+            	var uniquechar = "";
+
+            	const randomchar ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+            	// Generate captcha for length of
+            	// 5 with random character
+            	for (let i = 1; i < 5; i++) {
+            		uniquechar += randomchar.charAt(
+        			Math.random() * randomchar.length)
+            	}
+
+            	// Store generated input
+            	captcha.innerHTML = uniquechar;
+            }
+
+            function printmsg() {
+            	const usr_input = document.getElementById("submit").value;
+	
+            	// Check whether the input is equal
+            	// to generated captcha or not
+            	if (usr_input == captcha.innerHTML) {
+            		var s = document.getElementById("key").innerHTML = "Matched";
+            		generate();
+	            }
+            	else {
+            		var s = document.getElementById("key").innerHTML = "not Matched";
+            		generate();
+            	}
+            }
+
+        </script>
+    </body>
+</html>
